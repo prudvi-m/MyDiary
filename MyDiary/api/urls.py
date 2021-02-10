@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import main
+from .views import DiaryView
 
 urlpatterns = [
-    path('home/',main), 
-    path('',main), 
+    path('home/',DiaryView.as_view()), 
 ]
