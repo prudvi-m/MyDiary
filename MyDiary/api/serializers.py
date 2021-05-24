@@ -5,3 +5,4 @@ class DiarySerializer(serializers.ModelSerializer):
     class Meta:
        model =Diary 
        fields = ("id","voice_text","file_name","created_at","is_file","text")
+       
